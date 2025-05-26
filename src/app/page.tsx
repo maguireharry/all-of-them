@@ -42,25 +42,25 @@ export default function HomePage() {
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <h3 className="text-2xl font-semibold mb-3 text-purple-600">Album: Wonder</h3>
             <p className="text-gray-600 mb-2">Released: December 4, 2020</p>
-            <p className="text-gray-700">Dive into the introspective and dreamy soundscapes of Shawn's fourth studio album.</p>
+            <p className="text-gray-700">Dive into the introspective and dreamy soundscapes of Shawn&apos;s fourth studio album.</p>
           </div>
           {/* Music Item 2 */}
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <h3 className="text-2xl font-semibold mb-3 text-purple-600">Album: Shawn Mendes</h3>
             <p className="text-gray-600 mb-2">Released: May 25, 2018</p>
-            <p className="text-gray-700">Features hits like "In My Blood" and "Lost in Japan."</p>
+            <p className="text-gray-700">Features hits like &quot;In My Blood&quot; and &quot;Lost in Japan.&quot;</p>
           </div>
           {/* Music Item 3 */}
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <h3 className="text-2xl font-semibold mb-3 text-purple-600">Album: Illuminate</h3>
             <p className="text-gray-600 mb-2">Released: September 23, 2016</p>
-            <p className="text-gray-700">Includes "Treat You Better" and "Mercy." Showcased a more mature sound.</p>
+            <p className="text-gray-700">Includes &quot;Treat You Better&quot; and &quot;Mercy.&quot; Showcased a more mature sound.</p>
           </div>
           {/* Music Item 4 */}
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <h3 className="text-2xl font-semibold mb-3 text-purple-600">EP: The Shawn Mendes EP</h3>
             <p className="text-gray-600 mb-2">Released: July 28, 2014</p>
-            <p className="text-gray-700">Shawn's debut EP that introduced his talent to the world.</p>
+            <p className="text-gray-700">Shawn&apos;s debut EP that introduced his talent to the world.</p>
           </div>
           {/* Music Item 5 */}
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
@@ -90,7 +90,7 @@ export default function HomePage() {
               <h3 className="text-2xl font-semibold mb-3 text-indigo-600">Wonder: The World Tour</h3>
               <p className="text-gray-700 mb-1"><span className="font-semibold">Status:</span> Concluded</p>
               <p className="text-gray-700 mb-1"><span className="font-semibold">Year:</span> 2022-2023</p>
-              <p className="text-gray-700">Shawn toured across North America and Europe, bringing the "Wonder" album to life.</p>
+              <p className="text-gray-700">Shawn toured across North America and Europe, bringing the &quot;Wonder&quot; album to life.</p>
             </div>
             {/* Tour Item 2 */}
             <div className="bg-gray-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -104,7 +104,7 @@ export default function HomePage() {
               <h3 className="text-2xl font-semibold mb-3 text-indigo-600">Future Tour: TBA</h3>
               <p className="text-gray-700 mb-1"><span className="font-semibold">Status:</span> To Be Announced</p>
               <p className="text-gray-700 mb-1"><span className="font-semibold">Year:</span> Coming Soon!</p>
-              <p className="text-gray-700">Stay tuned for announcements about Shawn's next live experience!</p>
+              <p className="text-gray-700">Stay tuned for announcements about Shawn&apos;s next live experience!</p>
               <button className="mt-4 bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700 transition-colors duration-300">
                 Get Notified
               </button>
@@ -119,9 +119,9 @@ export default function HomePage() {
         <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* News Item 1 */}
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-            <h3 className="text-2xl font-semibold mb-3 text-pink-500">New Single "Heartbeat" Teased!</h3>
+            <h3 className="text-2xl font-semibold mb-3 text-pink-500">New Single &quot;Heartbeat&quot; Teased!</h3>
             <p className="text-gray-600 mb-2"><span className="font-semibold">Posted:</span> July 28, 2024</p>
-            <p className="text-gray-700">Shawn recently hinted at an upcoming single titled "Heartbeat" on his social media. Fans are buzzing with excitement!</p>
+            <p className="text-gray-700">Shawn recently hinted at an upcoming single titled &quot;Heartbeat&quot; on his social media. Fans are buzzing with excitement!</p>
           </div>
           {/* News Item 2 */}
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
@@ -133,7 +133,7 @@ export default function HomePage() {
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <h3 className="text-2xl font-semibold mb-3 text-pink-500">Behind the Scenes of "Wonder" Documentary</h3>
             <p className="text-gray-600 mb-2"><span className="font-semibold">Posted:</span> July 15, 2024</p>
-            <p className="text-gray-700">A new documentary offering a glimpse into the making of the "Wonder" album is now streaming on Netflix.</p>
+            <p className="text-gray-700">A new documentary offering a glimpse into the making of the &quot;Wonder&quot; album is now streaming on Netflix.</p>
           </div>
         </div>
       </section>
