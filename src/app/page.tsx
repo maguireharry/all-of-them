@@ -1,14 +1,18 @@
+import { SocialShareButtons } from '../components/ui/socialShareButtons';
+import Link from 'next/link';
+
 export default function HomePage() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-gray-50 text-gray-800">
       {/* Navigation Bar */}
       <nav className="w-full py-6 bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg">
         <div className="container mx-auto flex justify-between items-center px-6">
-          <a href="#" className="text-2xl font-bold hover:text-gray-200">Shawn Mendes Hub</a>
+          <Link href="/" className="text-2xl font-bold hover:text-gray-200">Shawn Mendes Hub</Link>
           <div className="space-x-6">
-            <a href="#music" className="hover:text-gray-200">Music</a>
-            <a href="#tours" className="hover:text-gray-200">Tours</a>
-            <a href="#news" className="hover:text-gray-200">News</a>
+            <Link href="/music" className="hover:text-gray-200">Music</Link>
+            <Link href="/gallery" className="hover:text-gray-200">Gallery</Link>
+            <Link href="/#tours" className="hover:text-gray-200">Tours</Link>
+            <Link href="/#news" className="hover:text-gray-200">News</Link>
           </div>
         </div>
       </nav>
@@ -29,6 +33,56 @@ export default function HomePage() {
               className="w-full h-full object-cover"
             />
           </div>
+        </div>
+      </section>
+
+      {/* Latest Activity Section */}
+      <section id="latest-activity" className="py-16 px-6 w-full bg-gray-100">
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl font-bold text-purple-700 mb-12">
+            What&apos;s New?
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Highlight Item 1: Music Hub */}
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center">
+              <h3 className="text-2xl font-semibold text-indigo-600 mb-3">
+                Explore Our Music Hub!
+              </h3>
+              <p className="text-gray-700 mb-6 text-center">
+                Dive deep into Shawn&apos;s discography, from his earliest EPs to his latest chart-topping albums. Explore tracklists, release dates, and more.
+              </p>
+              <Link href="/music" className="mt-auto inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
+                Go to Music Hub
+              </Link>
+            </div>
+
+            {/* Highlight Item 2: Gallery */}
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center">
+              <h3 className="text-2xl font-semibold text-pink-600 mb-3">
+                Fresh Additions to the Gallery!
+              </h3>
+              <p className="text-gray-700 mb-6 text-center">
+                Check out the latest official photos, stunning music video captures, and incredible fan art submissions in our updated gallery.
+              </p>
+              <Link href="/gallery" className="mt-auto inline-block bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
+                Visit Gallery
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Share Section */}
+      <section className="py-12 px-6 w-full bg-white text-center">
+        <h2 className="text-3xl font-semibold text-gray-800 mb-6">
+          Share the Excitement!
+        </h2>
+        <div className="flex justify-center">
+          <SocialShareButtons
+            url="https://example.com" 
+            title="Check out the Shawn Mendes Fan Hub!"
+            className="mt-4"
+          />
         </div>
       </section>
 
@@ -132,6 +186,30 @@ export default function HomePage() {
             <h3 className="text-2xl font-semibold mb-3 text-pink-500">Behind the Scenes of &quot;Wonder&quot; Documentary</h3>
             <p className="text-gray-600 mb-2"><span className="font-semibold">Posted:</span> July 15, 2024</p>
             <p className="text-gray-700">A new documentary offering a glimpse into the making of the &quot;Wonder&quot; album is now streaming on Netflix.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter Signup CTA Section */}
+      <section className="bg-gradient-to-r from-purple-600 to-indigo-700 text-white py-16 px-6 text-center">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold mb-4">Stay Connected!</h2>
+          <p className="text-lg mb-8 max-w-xl mx-auto">
+            Don&apos;t miss out! Subscribe to our newsletter for the latest Shawn Mendes news, exclusive content, fan features, and updates from the Hub.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="w-full sm:w-auto flex-grow px-4 py-3 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pink-500"
+              aria-label="Email for newsletter"
+            />
+            <button
+              type="button" // Using type="button" as it's not submitting a real form
+              className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 shadow-lg"
+            >
+              Subscribe
+            </button>
           </div>
         </div>
       </section>
