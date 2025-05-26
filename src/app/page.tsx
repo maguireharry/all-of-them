@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function HomePage() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-gray-50 text-gray-800">
@@ -131,7 +129,7 @@ export default function HomePage() {
           </div>
           {/* News Item 3 */}
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-            <h3 className="text-2xl font-semibold mb-3 text-pink-500">Behind the Scenes of "Wonder" Documentary</h3>
+            <h3 className="text-2xl font-semibold mb-3 text-pink-500">Behind the Scenes of &quot;Wonder&quot; Documentary</h3>
             <p className="text-gray-600 mb-2"><span className="font-semibold">Posted:</span> July 15, 2024</p>
             <p className="text-gray-700">A new documentary offering a glimpse into the making of the &quot;Wonder&quot; album is now streaming on Netflix.</p>
           </div>
